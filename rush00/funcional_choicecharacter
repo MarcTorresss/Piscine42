@@ -1,0 +1,21 @@
+UNIVERSAL PARA LOS 4 EJERCICIOS EX00, EX01,EX02,EX03,EX04
+SUPUESTA FUNCION 	char choicecharacter(int x, int y, int mx, int my, char ul, char dl, char ur, char dr, char arista)
+
+
+    Siendo valores de entrada (x,y).  mx,my.  Maximo de x y maximo de y. Si x es mx=1 devuelve CR.
+    Si son valores fuera de rango x>mx+1 o y>my devuelve el caracter NULL (evita errores)
+    
+    	  Las variables tipo caracter ul, dl, ur, dr, arista;  siendo
+
+			variables char desde ul-dr  siendo u de UP, d de DOWN, l de LEFT y r de RIGHT, y arista es obvio
+
+Al inicio, incondicionalmente archiva CHR 32
+si x=mx+1 archiva para devolver el caracter			/CR
+si x=mx and y=my archiva para dev el contenido de	dr
+si x=1 and y=my archiva para devolver el contenido	dl
+si y=1 and x=mx archiva para devolver el contenido	ur
+si x=1 and y=1    archiva pra devolver el cont de	ul
+si (x>1 and x<mx and y>1 and y<my archiva el cont	arista
+si x>mx+1 or y>my  (valores fuera rango) archiva	chr 0 NULL
+resto de casos.	Estaba archivado e inicializado con chr 32 #espacio
+RETURN valor archived
